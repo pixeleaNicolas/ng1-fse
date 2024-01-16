@@ -4,7 +4,7 @@
 	"settings": {
 		"appearanceTools": true,
         "layout": {
-			"contentSize": "960px",
+			"contentSize": "980px",
 			"wideSize": "1280px"
 		},
 		"color": {
