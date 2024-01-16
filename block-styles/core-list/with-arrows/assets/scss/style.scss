@@ -1,0 +1,57 @@
+ul.is-style-arrows {
+    list-style-type: none;
+    padding-left: 0;
+  
+    > li {
+      padding-left: 1.6em;
+      position: relative;
+      line-height: 1.2;
+      margin-top: 1.2em;
+      margin-bottom: 1.2em;
+      font-weight: 400;
+      font-size: inherit;
+
+      strong{
+        font-weight: 600;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        transition: all 0.3s;
+  
+        &:hover {
+          color: white;
+          background: var(--wp--preset--color--second);
+        }
+      }
+  
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 0.8em;
+        width: 1.4em;
+        position: absolute;
+        left: 0;
+        top: .25em;
+  
+
+        background-image: url('assets/img/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  :not(.aos-animate)[data-aos="fade-before-right"]:before {
+
+
+    opacity: 0;
+   left:-.5em;
+  }
+  
+  .aos-animate[data-aos="fade-before-right"]:before {
+    transition :all 1s ease-in-out;
+    content: ''; /* Ajoutez cette ligne pour définir le contenu du pseudo-élément */
+    opacity: 1;
+    left: 0px ;
+  }

@@ -3,7 +3,6 @@
 !/*.css
 # Ignorer les dossiers 'acf-blocks' et 'block-styles' où qu'ils se trouvent
 acf-blocks/
-block-styles/
 # Ignorer tous les fichiers qui commencent par ._ 
 ._*
 # Ignorer tous les fichiers qui commencent par .DS_Store
